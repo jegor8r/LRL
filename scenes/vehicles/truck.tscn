@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://d3bq7i0s2oftl"]
+
+[ext_resource type="Script" uid="uid://ss1ed16ov1ch" path="res://scripts/car.gd" id="1_edm8k"]
+[ext_resource type="Texture2D" uid="uid://bpnaeev8my7bw" path="res://assets/vehicles/White_BOXTRUCK_CLEAN_All_000-sheet.png" id="2_edm8k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dhq0x"]
+size = Vector2(80, 28)
+
+[node name="Truck" type="CharacterBody2D" unique_id=422600191]
+script = ExtResource("1_edm8k")
+speed = 100
+rotation_speed = 1.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1437454280]
+texture = ExtResource("2_edm8k")
+hframes = 8
+vframes = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=967398917]
+position = Vector2(5, 1)
+shape = SubResource("RectangleShape2D_dhq0x")
