@@ -1,7 +1,7 @@
 extends CharacterBody2D
-
-var speed = 200          # скорость машины
-var rotation_speed = 2.0 # скорость поворота
+#Экспорт дает возможность менять скорость разным машинам
+@export var speed = 200          # скорость машины
+@export var rotation_speed = 2.0 # скорость поворота
 
 func _physics_process(delta):
 	var input = Vector2.ZERO

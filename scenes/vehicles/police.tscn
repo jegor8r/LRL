@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bbvx57uwrllbx"]
+
+[ext_resource type="Script" uid="uid://ss1ed16ov1ch" path="res://scripts/car.gd" id="1_b706r"]
+[ext_resource type="Texture2D" uid="uid://cbdlm30lmyu38" path="res://assets/vehicles/POLICE_CLEAN_ALLD0000-sheet.png" id="2_b706r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dhq0x"]
+size = Vector2(60, 28)
+
+[node name="Police" type="CharacterBody2D" unique_id=422600191]
+script = ExtResource("1_b706r")
+speed = 300
+rotation_speed = 2.5
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1437454280]
+texture = ExtResource("2_b706r")
+hframes = 8
+vframes = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=967398917]
+position = Vector2(3, 2)
+shape = SubResource("RectangleShape2D_dhq0x")
