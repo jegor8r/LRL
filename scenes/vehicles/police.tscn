@@ -2,9 +2,13 @@
 
 [ext_resource type="Script" uid="uid://ss1ed16ov1ch" path="res://scripts/car.gd" id="1_b706r"]
 [ext_resource type="Texture2D" uid="uid://cbdlm30lmyu38" path="res://assets/vehicles/POLICE_CLEAN_ALLD0000-sheet.png" id="2_b706r"]
+[ext_resource type="Script" uid="uid://4k4jjud02xdo" path="res://scripts/car_area.gd" id="3_xm2ja"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dhq0x"]
 size = Vector2(60, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xvb7q"]
+size = Vector2(63, 26)
 
 [node name="Police" type="CharacterBody2D" unique_id=422600191]
 script = ExtResource("1_b706r")
@@ -19,3 +23,12 @@ vframes = 7
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=967398917]
 position = Vector2(3, 2)
 shape = SubResource("RectangleShape2D_dhq0x")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1327430466]
+script = ExtResource("3_xm2ja")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1317782295]
+position = Vector2(5.5, 4)
+shape = SubResource("RectangleShape2D_xvb7q")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

@@ -1,11 +1,11 @@
 extends CharacterBody2D
 @export var max_health = 100
 @export var health = 100
-@export var speed = 150
+@export var speed = 100
 
 # получаем узел AnimatedSprite2D
 @onready var sprite = $AnimatedSprite2D
-
+#Ходьба
 func _physics_process(delta):
 	var direction = Vector2.ZERO
 	
@@ -34,11 +34,21 @@ func _physics_process(delta):
 		sprite.play("Walk_left")
 	elif direction.x > 0:
 		sprite.play("Walk_right")
+
+# Функции здоровья и урона
 func take_damage(amount):
 	health -=amount
 	print("HP:", health)
+	blink()
 	if health <= 0:
 		die()
+		
 func die():
 	print("You died!")
 	queue_free()
+func blink(): #Функция моргания при получении урона
+	for i in range(3):
+		sprite.modulate = Color(1, 0, 0, 0.5)
+		await get_tree().create_timer(0.1).timeout
+		sprite.modulate = Color(1, 1, 1)
+		await get_tree().create_timer(0.1).timeout

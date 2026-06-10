@@ -7,6 +7,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dhq0x"]
 size = Vector2(60, 28)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2gad2"]
+size = Vector2(63, 26)
+
 [node name="Car" type="CharacterBody2D" unique_id=422600191]
 script = ExtResource("1_76dk7")
 
@@ -23,5 +26,7 @@ shape = SubResource("RectangleShape2D_dhq0x")
 script = ExtResource("3_2gad2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=197004709]
+position = Vector2(5.5, 4)
+shape = SubResource("RectangleShape2D_2gad2")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
