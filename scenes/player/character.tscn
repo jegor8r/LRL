@@ -327,16 +327,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p42bw"]
-size = Vector2(92, 167)
+size = Vector2(19.75, 36.15625)
 
 [node name="Character" type="CharacterBody2D" unique_id=42072842]
 script = ExtResource("1_unmdi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=995106845]
+position = Vector2(-0.99999976, 0)
+scale = Vector2(0.18808593, 0.20546876)
 sprite_frames = SubResource("SpriteFrames_t1eqt")
 animation = &"Idle"
 frame_progress = 0.75973696
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1007841904]
-position = Vector2(0, 12.5)
+position = Vector2(-1, 2)
 shape = SubResource("RectangleShape2D_p42bw")

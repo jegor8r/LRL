@@ -1,5 +1,6 @@
 extends CharacterBody2D
-
+@export var max_health = 100
+@export var health = 100
 @export var speed = 150
 
 # получаем узел AnimatedSprite2D
@@ -33,3 +34,11 @@ func _physics_process(delta):
 		sprite.play("Walk_left")
 	elif direction.x > 0:
 		sprite.play("Walk_right")
+func take_damage(amount):
+	health -=amount
+	print("HP:", health)
+	if health <= 0:
+		die()
+func die():
+	print("You died!")
+	queue_free()

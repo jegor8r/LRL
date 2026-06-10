@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ss1ed16ov1ch" path="res://scripts/car.gd" id="1_76dk7"]
 [ext_resource type="Texture2D" uid="uid://buututqeoclxw" path="res://assets/vehicles/Red_MUSCLECAR_CLEAN_All_000-sheet.png" id="2_2gad2"]
+[ext_resource type="Script" uid="uid://4k4jjud02xdo" path="res://scripts/car_area.gd" id="3_2gad2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dhq0x"]
 size = Vector2(60, 28)
@@ -17,3 +18,10 @@ vframes = 7
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=967398917]
 position = Vector2(3, 2)
 shape = SubResource("RectangleShape2D_dhq0x")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1336625638]
+script = ExtResource("3_2gad2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=197004709]
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
