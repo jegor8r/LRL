@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bxntxtfvxlnj6" path="res://assets/characters/idle320x320.png" id="1_dphfv"]
 [ext_resource type="Script" uid="uid://bj2fgmf7sfwjd" path="res://scripts/npc.gd" id="1_lugpi"]
 [ext_resource type="Texture2D" uid="uid://bcq1b8sg48rwh" path="res://assets/characters/walk320x320.png" id="2_lugpi"]
-[ext_resource type="Script" uid="uid://b7xm4dapak0mu" path="res://scripts/NpcDamage.gd" id="4_22qrj"]
+[ext_resource type="Script" uid="uid://cn62mrhn77skd" path="res://scripts/CarDamage.gd" id="4_22qrj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_22qrj"]
 atlas = ExtResource("1_dphfv")
@@ -333,7 +333,7 @@ size = Vector2(20, 33)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_80tsi"]
 size = Vector2(17, 34)
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=915099570]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=915099570 groups=["NPC"]]
 script = ExtResource("1_lugpi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1520909616]
