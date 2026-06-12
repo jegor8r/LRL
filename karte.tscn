@@ -1,0 +1,220 @@
+[gd_scene format=3 uid="uid://b4t64tyxuiqdh"]
+
+[ext_resource type="Texture2D" uid="uid://xsytl8aqhg53" path="res://assets/city/asvalts_bez_neka_1.png" id="2_wsaho"]
+[ext_resource type="Texture2D" uid="uid://dldukgdh5ak7i" path="res://cels_920_01.png" id="3_pl15p"]
+[ext_resource type="Texture2D" uid="uid://bo1u7pjc2v5rc" path="res://trotuars-cels-laba-puse_0.1.png" id="4_34uy8"]
+[ext_resource type="Texture2D" uid="uid://ccglkgtx287xs" path="res://trotuars-cels-kreisa-puse_0.1.png" id="4_e137o"]
+[ext_resource type="Texture2D" uid="uid://rym4lak1gl6r" path="res://trotuars-cels-kreisais-augsejais-sturis_0.1.png" id="5_ahgt8"]
+[ext_resource type="Texture2D" uid="uid://casf5kdkj0r1d" path="res://trotuars-cels-augseja-puse_0.1.png" id="6_jrxa5"]
+[ext_resource type="Texture2D" uid="uid://dv76ar3loaqhr" path="res://trotuars-cels-labais-augsejais-sturis_0.1.png" id="7_67bp8"]
+[ext_resource type="Texture2D" uid="uid://cp6fpha3o50sg" path="res://cels_923_01.png" id="8_mkjh4"]
+[ext_resource type="Texture2D" uid="uid://bprd7wax6pe7p" path="res://cels_929_abas_puses_01.png" id="9_nasg7"]
+[ext_resource type="Texture2D" uid="uid://cl8i3tvsnwvli" path="res://cels_921_01.png" id="10_7aqp2"]
+[ext_resource type="Texture2D" uid="uid://bkbtxsg2jqmai" path="res://asfalts-apaksa-cels_929_01.png" id="11_fyxle"]
+[ext_resource type="Texture2D" uid="uid://bwlhqom1qlalh" path="res://trotuars-cels_929-kreisa-puse.01.png" id="12_qbw7f"]
+[ext_resource type="Texture2D" uid="uid://dg7g5kqrnd3ax" path="res://cels_921x929-kreisais-apaksejais-sturis_01.png" id="13_f30bf"]
+
+[sub_resource type="TileSet" id="TileSet_e137o"]
+tile_size = Vector2i(64, 64)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tgteg"]
+
+[node name="Karte" type="Node2D" unique_id=324903866]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=101157524]
+tile_set = SubResource("TileSet_e137o")
+
+[node name="Cels92001" type="Sprite2D" parent="." unique_id=1621639210]
+position = Vector2(0.5, 2)
+scale = Vector2(1.015625, 1)
+texture = SubResource("CompressedTexture2D_tgteg")
+
+[node name="AsvaltsBezNeka1" type="Sprite2D" parent="." unique_id=725856873]
+position = Vector2(65, 2)
+texture = ExtResource("2_wsaho")
+
+[node name="Cels92301" type="Sprite2D" parent="." unique_id=224401287]
+position = Vector2(129, 2)
+texture = ExtResource("3_pl15p")
+
+[node name="AsvaltsBezNeka2" type="Sprite2D" parent="." unique_id=2005393652]
+position = Vector2(193, 2)
+texture = ExtResource("2_wsaho")
+
+[node name="TrotuarsCelsLabaPuse0_1" type="Sprite2D" parent="." unique_id=581377314]
+position = Vector2(257, 2)
+texture = ExtResource("4_34uy8")
+
+[node name="Karte" type="Node2D" parent="." unique_id=31816612]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Karte" unique_id=1981715589]
+tile_set = SubResource("TileSet_e137o")
+
+[node name="Cels92001" type="Sprite2D" parent="Karte" unique_id=1238119639]
+position = Vector2(0.5, 66)
+scale = Vector2(1.015625, 1)
+texture = SubResource("CompressedTexture2D_tgteg")
+
+[node name="AsvaltsBezNeka1" type="Sprite2D" parent="Karte" unique_id=410030249]
+position = Vector2(64, 66)
+texture = ExtResource("2_wsaho")
+
+[node name="Cels92301" type="Sprite2D" parent="Karte" unique_id=439782748]
+position = Vector2(128, 66)
+texture = ExtResource("3_pl15p")
+
+[node name="AsvaltsBezNeka2" type="Sprite2D" parent="Karte" unique_id=389078672]
+position = Vector2(191, 66)
+texture = ExtResource("2_wsaho")
+
+[node name="TrotuarsCelsLabaPuse0_1" type="Sprite2D" parent="Karte" unique_id=1797233284]
+position = Vector2(254, 66)
+texture = ExtResource("4_34uy8")
+
+[node name="Karte2" type="Node2D" parent="." unique_id=1365098143]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Karte2" unique_id=961497643]
+tile_set = SubResource("TileSet_e137o")
+
+[node name="Karte" type="Node2D" parent="Karte2" unique_id=274398559]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Karte2/Karte" unique_id=1314665956]
+tile_set = SubResource("TileSet_e137o")
+
+[node name="Cels92002" type="Sprite2D" parent="." unique_id=811664035]
+position = Vector2(0.5, -62)
+scale = Vector2(1.015625, 1)
+texture = SubResource("CompressedTexture2D_tgteg")
+
+[node name="AsvaltsBezNeka3" type="Sprite2D" parent="." unique_id=416716208]
+position = Vector2(65, -62)
+texture = ExtResource("2_wsaho")
+
+[node name="Cels92302" type="Sprite2D" parent="." unique_id=1388440106]
+position = Vector2(129, -62)
+texture = ExtResource("3_pl15p")
+
+[node name="AsvaltsBezNeka4" type="Sprite2D" parent="." unique_id=1545929590]
+position = Vector2(193, -62)
+texture = ExtResource("2_wsaho")
+
+[node name="TrotuarsCelsLabaPuse0_2" type="Sprite2D" parent="." unique_id=457995293]
+position = Vector2(257, -62)
+texture = ExtResource("4_34uy8")
+
+[node name="Cels92003" type="Sprite2D" parent="." unique_id=1028259053]
+position = Vector2(0.5, -126)
+scale = Vector2(1.015625, 1)
+texture = SubResource("CompressedTexture2D_tgteg")
+
+[node name="AsvaltsBezNeka5" type="Sprite2D" parent="." unique_id=341935468]
+position = Vector2(65, -126)
+texture = ExtResource("2_wsaho")
+
+[node name="Cels92303" type="Sprite2D" parent="." unique_id=1712998157]
+position = Vector2(129, -126)
+texture = ExtResource("3_pl15p")
+
+[node name="AsvaltsBezNeka6" type="Sprite2D" parent="." unique_id=2092535738]
+position = Vector2(193, -126)
+texture = ExtResource("2_wsaho")
+
+[node name="TrotuarsCelsLabaPuse0_3" type="Sprite2D" parent="." unique_id=1956989271]
+position = Vector2(257, -126)
+texture = ExtResource("4_34uy8")
+
+[node name="AsvaltsBezNeka8" type="Sprite2D" parent="." unique_id=722246865]
+position = Vector2(-64, 2)
+texture = ExtResource("2_wsaho")
+
+[node name="AsvaltsBezNeka7" type="Sprite2D" parent="AsvaltsBezNeka8" unique_id=1027473829]
+position = Vector2(0, -64)
+texture = ExtResource("2_wsaho")
+
+[node name="AsvaltsBezNeka7" type="Sprite2D" parent="AsvaltsBezNeka8/AsvaltsBezNeka7" unique_id=1257600329]
+position = Vector2(0, -64)
+texture = ExtResource("2_wsaho")
+
+[node name="AsvaltsBezNeka9" type="Sprite2D" parent="." unique_id=1698976542]
+position = Vector2(-192, 2)
+texture = ExtResource("2_wsaho")
+
+[node name="AsvaltsBezNeka11" type="Sprite2D" parent="." unique_id=2141491481]
+position = Vector2(-192, -62)
+texture = ExtResource("2_wsaho")
+
+[node name="AsvaltsBezNeka12" type="Sprite2D" parent="." unique_id=1731891319]
+position = Vector2(-192, -126)
+texture = ExtResource("2_wsaho")
+
+[node name="TrotuarsCelsKreisaPuse0_2" type="Sprite2D" parent="." unique_id=1625780738]
+position = Vector2(-256, 2)
+texture = ExtResource("4_e137o")
+
+[node name="TrotuarsCelsKreisaPuse0_1" type="Sprite2D" parent="TrotuarsCelsKreisaPuse0_2" unique_id=194191073]
+position = Vector2(0, -64)
+texture = ExtResource("4_e137o")
+
+[node name="TrotuarsCelsKreisaPuse0_1" type="Sprite2D" parent="TrotuarsCelsKreisaPuse0_2/TrotuarsCelsKreisaPuse0_1" unique_id=1615503249]
+position = Vector2(0, -64)
+texture = ExtResource("4_e137o")
+
+[node name="TrotuarsCelsKreisaisAugsejaisSturis0_1" type="Sprite2D" parent="." unique_id=808742764]
+position = Vector2(-256, 130)
+texture = ExtResource("5_ahgt8")
+
+[node name="TrotuarsCelsAugsejaPuse0_1" type="Sprite2D" parent="." unique_id=323740476]
+position = Vector2(-320, 130)
+texture = ExtResource("6_jrxa5")
+
+[node name="TrotuarsCelsLabaisAugsejaisSturis0_1" type="Sprite2D" parent="." unique_id=879476830]
+position = Vector2(254, 130)
+texture = ExtResource("7_67bp8")
+
+[node name="TrotuarsCelsAugsejaPuse0_2" type="Sprite2D" parent="." unique_id=1322704712]
+position = Vector2(318, 130)
+texture = ExtResource("6_jrxa5")
+
+[node name="Cels92304" type="Sprite2D" parent="." unique_id=568175039]
+position = Vector2(-128, -126)
+texture = ExtResource("8_mkjh4")
+
+[node name="Cels92305" type="Sprite2D" parent="." unique_id=403059792]
+position = Vector2(-128, -62)
+texture = ExtResource("8_mkjh4")
+
+[node name="Cels92004" type="Sprite2D" parent="." unique_id=785303350]
+position = Vector2(-128, 2)
+texture = ExtResource("3_pl15p")
+
+[node name="Cels929AbasPuses01" type="Sprite2D" parent="." unique_id=1258868880]
+position = Vector2(-128, 66)
+texture = ExtResource("9_nasg7")
+
+[node name="Cels92101" type="Sprite2D" parent="." unique_id=1661756619]
+position = Vector2(0, -126)
+texture = ExtResource("10_7aqp2")
+
+[node name="AsfaltsApaksaCels92901" type="Sprite2D" parent="." unique_id=716541440]
+position = Vector2(-192, 66)
+texture = ExtResource("11_fyxle")
+
+[node name="TrotuarsCels929KreisaPuse_01" type="Sprite2D" parent="." unique_id=1265046362]
+position = Vector2(-256, 66)
+texture = ExtResource("12_qbw7f")
+
+[node name="AsfaltsApaksaCels92902" type="Sprite2D" parent="." unique_id=705835058]
+position = Vector2(-64, 66)
+texture = ExtResource("11_fyxle")
+
+[node name="Cels92102" type="Sprite2D" parent="." unique_id=241384268]
+position = Vector2(0, -62)
+texture = ExtResource("10_7aqp2")
+
+[node name="Cels92101" type="Sprite2D" parent="Cels92102" unique_id=1086684888]
+position = Vector2(0, 64)
+texture = ExtResource("10_7aqp2")
+
+[node name="Cels921x929KreisaisApaksejaisSturis01" type="Sprite2D" parent="." unique_id=364279313]
+position = Vector2(0, 66)
+texture = ExtResource("13_f30bf")
