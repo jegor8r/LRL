@@ -42,7 +42,15 @@ func take_damage(amount):
 	blink()
 	if health <= 0:
 		die()
-		
+# НАДО ДОДЕЛАТЬ!!!
+#Функция исцеления здоровья
+func heal():
+	await get_tree().create_timer(5.0).timeout
+	while health <= max_health:         
+		health += 5
+		await get_tree().create_timer(1).timeout
+	return
+#Функция смерти
 func die():
 	print("You died!")
 	queue_free()
