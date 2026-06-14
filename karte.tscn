@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bkbtxsg2jqmai" path="res://asfalts-apaksa-cels_929_01.png" id="11_fyxle"]
 [ext_resource type="Texture2D" uid="uid://bwlhqom1qlalh" path="res://trotuars-cels_929-kreisa-puse.01.png" id="12_qbw7f"]
 [ext_resource type="Texture2D" uid="uid://dg7g5kqrnd3ax" path="res://cels_921x929-kreisais-apaksejais-sturis_01.png" id="13_f30bf"]
+[ext_resource type="Texture2D" uid="uid://df4tqpcuqavok" path="res://maxima_02.png" id="14_nasg7"]
 
 [sub_resource type="TileSet" id="TileSet_e137o"]
 tile_size = Vector2i(64, 64)
@@ -218,3 +219,7 @@ texture = ExtResource("10_7aqp2")
 [node name="Cels921x929KreisaisApaksejaisSturis01" type="Sprite2D" parent="." unique_id=364279313]
 position = Vector2(0, 66)
 texture = ExtResource("13_f30bf")
+
+[node name="Maxima02" type="Sprite2D" parent="." unique_id=1453526731]
+position = Vector2(-399, 7)
+texture = ExtResource("14_nasg7")
