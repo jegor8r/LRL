@@ -39,7 +39,7 @@ func _physics_process(delta):
 func take_damage(amount):
 	health -=amount
 	print("HP:", health)
-	blink()
+	blink_damage()
 	if health <= 0:
 		die()
 # НАДО ДОДЕЛАТЬ!!!
@@ -48,15 +48,21 @@ func heal():
 	await get_tree().create_timer(5.0).timeout
 	while health <= max_health:         
 		health += 5
-		await get_tree().create_timer(1).timeout
+		blink_heal()
 	return
 #Функция смерти
 func die():
 	print("You died!")
 	queue_free()
-func blink(): #Функция моргания при получении урона
+func blink_damage(): #Функция моргания (для получения урона)
 	for i in range(3):
 		sprite.modulate = Color(1, 0, 0, 0.5)
 		await get_tree().create_timer(0.1).timeout
+		sprite.modulate = Color(1, 1, 1)
+		await get_tree().create_timer(0.1).timeout
+func blink_heal():   #Функция моргания (Для востановления хп)
+	for p in range(2):
+		sprite.modulate = Color(0, 1, 0, 0.5)
+		await  get_tree().create_timer(0.1).timeout
 		sprite.modulate = Color(1, 1, 1)
 		await get_tree().create_timer(0.1).timeout
