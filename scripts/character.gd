@@ -65,6 +65,10 @@ func heal():
 		health = min(health +5, max_health)
 		await blink_heal()
 	is_healing = false
+	
+func heal_pickup (amount):
+	health = min(health + amount, max_health)
+	blink_heal()
 #Функция смерти
 func die():
 	print("You died!")

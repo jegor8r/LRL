@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://crgfla3dwppjs"]
+
+[ext_resource type="Script" uid="uid://bu1mmmpmgl5rw" path="res://scripts/heal_item.gd" id="1_8vb04"]
+[ext_resource type="Texture2D" uid="uid://bbaugx6lx6c5c" path="res://assets/small_items/heal.png" id="1_iej0i"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8vb04"]
+radius = 7.0
+
+[node name="Heal" type="Area2D" unique_id=1703229287]
+script = ExtResource("1_8vb04")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=322484839 groups=["Item"]]
+position = Vector2(-1, -3)
+shape = SubResource("CircleShape2D_8vb04")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1198375286]
+texture = ExtResource("1_iej0i")

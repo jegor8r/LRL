@@ -21,6 +21,8 @@ NPC="Группа для НПС"
 Car="Группа для машин"
 Character="Персонаж"
 Police="Группа для полиции"
+Player="Player group"
+Item="Item group"
 
 [physics]
 
