@@ -2,13 +2,14 @@ extends CharacterBody2D
 @export var max_health = 100
 @export var health = 100
 @export var speed = 100
+@export var stamina = 100
+@export var max_stamina = 100
 
 # получаем узел AnimatedSprite2D
 @onready var sprite = $AnimatedSprite2D
 #Ходьба
 func _physics_process(delta):
 	var direction = Vector2.ZERO
-	
 	# считываем ввод
 	if Input.is_action_pressed("ui_up"):
 		direction.y = -1
@@ -18,11 +19,17 @@ func _physics_process(delta):
 		direction.x = -1
 	if Input.is_action_pressed("ui_right"):
 		direction.x = 1
-	
-	# двигаем персонажа
-	velocity = direction * speed
+		
+	var current_speed = speed
+	if Input.is_key_pressed(KEY_SHIFT) and stamina > 0:
+		current_speed = speed * 3
+		stamina -= 10 * delta
+		stamina = max(stamina, 0)
+	else:
+		stamina += 10 * delta
+		stamina = min(stamina, max_stamina)
+	velocity = current_speed * direction
 	move_and_slide()
-	
 	# анимации
 	if direction == Vector2.ZERO:
 		sprite.play("Idle")
@@ -46,9 +53,9 @@ func take_damage(amount):
 #Функция исцеления здоровья
 func heal():
 	await get_tree().create_timer(5.0).timeout
-	while health <= max_health:         
-		health += 5
-		blink_heal()
+	while health < max_health:         
+		health = min(health +5, max_health)
+		await blink_heal()
 	return
 #Функция смерти
 func die():
