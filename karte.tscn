@@ -1,19 +1,19 @@
 [gd_scene format=3 uid="uid://b4t64tyxuiqdh"]
 
-[ext_resource type="Texture2D" uid="uid://xsytl8aqhg53" path="res://assets/city/asvalts_bez_neka_1.png" id="2_wsaho"]
-[ext_resource type="Texture2D" uid="uid://dldukgdh5ak7i" path="res://cels_920_01.png" id="3_pl15p"]
-[ext_resource type="Texture2D" uid="uid://bo1u7pjc2v5rc" path="res://trotuars-cels-laba-puse_0.1.png" id="4_34uy8"]
-[ext_resource type="Texture2D" uid="uid://ccglkgtx287xs" path="res://trotuars-cels-kreisa-puse_0.1.png" id="4_e137o"]
-[ext_resource type="Texture2D" uid="uid://rym4lak1gl6r" path="res://trotuars-cels-kreisais-augsejais-sturis_0.1.png" id="5_ahgt8"]
-[ext_resource type="Texture2D" uid="uid://casf5kdkj0r1d" path="res://trotuars-cels-augseja-puse_0.1.png" id="6_jrxa5"]
-[ext_resource type="Texture2D" uid="uid://dv76ar3loaqhr" path="res://trotuars-cels-labais-augsejais-sturis_0.1.png" id="7_67bp8"]
-[ext_resource type="Texture2D" uid="uid://cp6fpha3o50sg" path="res://cels_923_01.png" id="8_mkjh4"]
-[ext_resource type="Texture2D" uid="uid://bprd7wax6pe7p" path="res://cels_929_abas_puses_01.png" id="9_nasg7"]
-[ext_resource type="Texture2D" uid="uid://cl8i3tvsnwvli" path="res://cels_921_01.png" id="10_7aqp2"]
-[ext_resource type="Texture2D" uid="uid://bkbtxsg2jqmai" path="res://asfalts-apaksa-cels_929_01.png" id="11_fyxle"]
-[ext_resource type="Texture2D" uid="uid://bwlhqom1qlalh" path="res://trotuars-cels_929-kreisa-puse.01.png" id="12_qbw7f"]
-[ext_resource type="Texture2D" uid="uid://dg7g5kqrnd3ax" path="res://cels_921x929-kreisais-apaksejais-sturis_01.png" id="13_f30bf"]
-[ext_resource type="Texture2D" uid="uid://df4tqpcuqavok" path="res://maxima_02.png" id="14_nasg7"]
+[ext_resource type="Texture2D" path="res://assets/city/asvalts_bez_neka_1.png" id="2_wsaho"]
+[ext_resource type="Texture2D" path="res://cels_920_01.png" id="3_pl15p"]
+[ext_resource type="Texture2D" path="res://trotuars-cels-laba-puse_0.1.png" id="4_34uy8"]
+[ext_resource type="Texture2D" path="res://trotuars-cels-kreisa-puse_0.1.png" id="4_e137o"]
+[ext_resource type="Texture2D" path="res://trotuars-cels-kreisais-augsejais-sturis_0.1.png" id="5_ahgt8"]
+[ext_resource type="Texture2D" path="res://trotuars-cels-augseja-puse_0.1.png" id="6_jrxa5"]
+[ext_resource type="Texture2D" path="res://trotuars-cels-labais-augsejais-sturis_0.1.png" id="7_67bp8"]
+[ext_resource type="Texture2D" path="res://cels_923_01.png" id="8_mkjh4"]
+[ext_resource type="Texture2D" path="res://cels_929_abas_puses_01.png" id="9_nasg7"]
+[ext_resource type="Texture2D" path="res://cels_921_01.png" id="10_7aqp2"]
+[ext_resource type="Texture2D" path="res://asfalts-apaksa-cels_929_01.png" id="11_fyxle"]
+[ext_resource type="Texture2D" path="res://trotuars-cels_929-kreisa-puse.01.png" id="12_qbw7f"]
+[ext_resource type="Texture2D" path="res://cels_921x929-kreisais-apaksejais-sturis_01.png" id="13_f30bf"]
+[ext_resource type="Texture2D" path="res://maxima_02.png" id="14_nasg7"]
 
 [sub_resource type="TileSet" id="TileSet_e137o"]
 tile_size = Vector2i(64, 64)
@@ -221,5 +221,6 @@ position = Vector2(0, 66)
 texture = ExtResource("13_f30bf")
 
 [node name="Maxima02" type="Sprite2D" parent="." unique_id=1453526731]
-position = Vector2(-399, 7)
+position = Vector2(-506, -116)
+scale = Vector2(1.963964, 1.9230769)
 texture = ExtResource("14_nasg7")

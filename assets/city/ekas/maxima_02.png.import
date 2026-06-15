@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://df4tqpcuqavok"
-path="res://.godot/imported/maxima_02.png-d989559f615905a0b0cf84d7557154e3.ctex"
+path="res://.godot/imported/maxima_02.png-9fdfd917fe158784d4afb87fc5c4d3b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://maxima_02.png"
-dest_files=["res://.godot/imported/maxima_02.png-d989559f615905a0b0cf84d7557154e3.ctex"]
+source_file="res://assets/city/ekas/maxima_02.png"
+dest_files=["res://.godot/imported/maxima_02.png-9fdfd917fe158784d4afb87fc5c4d3b1.ctex"]
 
 [params]
 

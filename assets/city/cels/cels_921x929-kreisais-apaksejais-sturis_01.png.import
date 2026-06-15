@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dg7g5kqrnd3ax"
-path="res://.godot/imported/cels_921x929-kreisais-apaksejais-sturis_01.png-a09937cc520f3f04a0aaae41ea7d77ed.ctex"
+path="res://.godot/imported/cels_921x929-kreisais-apaksejais-sturis_01.png-c28f25f42a7c23c6a45b13aa1ca22b63.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cels_921x929-kreisais-apaksejais-sturis_01.png"
-dest_files=["res://.godot/imported/cels_921x929-kreisais-apaksejais-sturis_01.png-a09937cc520f3f04a0aaae41ea7d77ed.ctex"]
+source_file="res://assets/city/cels/cels_921x929-kreisais-apaksejais-sturis_01.png"
+dest_files=["res://.godot/imported/cels_921x929-kreisais-apaksejais-sturis_01.png-c28f25f42a7c23c6a45b13aa1ca22b63.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnhkjp00wqw6a"
-path="res://.godot/imported/trotuars-cels-apakseja-puse_0.1.png-2e1a1a460cb4f198ca9875946deb94a8.ctex"
+path="res://.godot/imported/trotuars-cels-apakseja-puse_0.1.png-530b7d5b36b02a7857f12963c849af74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://trotuars-cels-apakseja-puse_0.1.png"
-dest_files=["res://.godot/imported/trotuars-cels-apakseja-puse_0.1.png-2e1a1a460cb4f198ca9875946deb94a8.ctex"]
+source_file="res://assets/city/cels/trotuars-cels-apakseja-puse_0.1.png"
+dest_files=["res://.godot/imported/trotuars-cels-apakseja-puse_0.1.png-530b7d5b36b02a7857f12963c849af74.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bprd7wax6pe7p"
-path="res://.godot/imported/cels_929_abas_puses_01.png-08d55d7f5fd46fcccdfcb75c20afa413.ctex"
+path="res://.godot/imported/cels_929_abas_puses_01.png-5ca34ca40d1d6f5a91f1f28b1ee80770.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cels_929_abas_puses_01.png"
-dest_files=["res://.godot/imported/cels_929_abas_puses_01.png-08d55d7f5fd46fcccdfcb75c20afa413.ctex"]
+source_file="res://assets/city/cels/cels_929_abas_puses_01.png"
+dest_files=["res://.godot/imported/cels_929_abas_puses_01.png-5ca34ca40d1d6f5a91f1f28b1ee80770.ctex"]
 
 [params]
 

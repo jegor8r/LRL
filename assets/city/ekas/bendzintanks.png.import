@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xsytl8aqhg53"
-path="res://.godot/imported/asvalts_bez_neka_1.png-4452381671ddcaa8763325d0d8ce59c0.ctex"
+uid="uid://clxenixh8e5ck"
+path="res://.godot/imported/bendzintanks.png-4459a4089b4dd4fd6c4b9bf95127e1c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/city/cels/asvalts_bez_neka_1.png"
-dest_files=["res://.godot/imported/asvalts_bez_neka_1.png-4452381671ddcaa8763325d0d8ce59c0.ctex"]
+source_file="res://assets/city/ekas/bendzintanks.png"
+dest_files=["res://.godot/imported/bendzintanks.png-4459a4089b4dd4fd6c4b9bf95127e1c7.ctex"]
 
 [params]
 

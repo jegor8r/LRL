@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bo1u7pjc2v5rc"
-path="res://.godot/imported/trotuars-cels-laba-puse_0.1.png-6e0de76c87499fc74fa020db379d5af7.ctex"
+path="res://.godot/imported/trotuars-cels-laba-puse_0.1.png-afd10fae2bd527ce37f99586ea53d92b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://trotuars-cels-laba-puse_0.1.png"
-dest_files=["res://.godot/imported/trotuars-cels-laba-puse_0.1.png-6e0de76c87499fc74fa020db379d5af7.ctex"]
+source_file="res://assets/city/cels/trotuars-cels-laba-puse_0.1.png"
+dest_files=["res://.godot/imported/trotuars-cels-laba-puse_0.1.png-afd10fae2bd527ce37f99586ea53d92b.ctex"]
 
 [params]
 

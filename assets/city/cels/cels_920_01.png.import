@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dldukgdh5ak7i"
-path="res://.godot/imported/cels_920_01.png-ac40b3d8a67490aabebaa14882530ac4.ctex"
+path="res://.godot/imported/cels_920_01.png-4b22df4d40582b7220152175b9b93a25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cels_920_01.png"
-dest_files=["res://.godot/imported/cels_920_01.png-ac40b3d8a67490aabebaa14882530ac4.ctex"]
+source_file="res://assets/city/cels/cels_920_01.png"
+dest_files=["res://.godot/imported/cels_920_01.png-4b22df4d40582b7220152175b9b93a25.ctex"]
 
 [params]
 
