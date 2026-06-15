@@ -49,14 +49,22 @@ func take_damage(amount):
 	blink_damage()
 	if health <= 0:
 		die()
+	else:
+		start_heal()
 # НАДО ДОДЕЛАТЬ!!!
 #Функция исцеления здоровья
+var is_healing = false
+func start_heal():
+	if is_healing:
+		return
+	is_healing = true
+	heal()
 func heal():
 	await get_tree().create_timer(5.0).timeout
-	while health < max_health:         
+	while health < max_health and is_healing:         
 		health = min(health +5, max_health)
 		await blink_heal()
-	return
+	is_healing = false
 #Функция смерти
 func die():
 	print("You died!")
