@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://ch81ocb6t2pnu"]
+
+[ext_resource type="Script" uid="uid://uwf6usya6rwe" path="res://scripts/car/npc_car.gd" id="1_khed4"]
+[ext_resource type="Texture2D" uid="uid://d1ppi7qgjxgx0" path="res://assets/vehicles/Blue_CIVIC_CLEAN_All_000-sheet.png" id="2_j7c5q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dmjwx"]
+size = Vector2(51, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pj364"]
+size = Vector2(58, 37)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=968845134]
+script = ExtResource("1_khed4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1214114273]
+texture = ExtResource("2_j7c5q")
+hframes = 7
+vframes = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1476505834]
+position = Vector2(-1.5, 5)
+shape = SubResource("RectangleShape2D_dmjwx")
+
+[node name="EntryZone(Area 2D)" type="Area2D" parent="." unique_id=675541932]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EntryZone(Area 2D)" unique_id=1339306466]
+position = Vector2(-2, 2.5)
+shape = SubResource("RectangleShape2D_pj364")

@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://d3bq7i0s2oftl"]
 
-[ext_resource type="Script" uid="uid://ss1ed16ov1ch" path="res://scripts/car.gd" id="1_edm8k"]
+[ext_resource type="Script" uid="uid://ss1ed16ov1ch" path="res://scripts/car/car.gd" id="1_edm8k"]
 [ext_resource type="Texture2D" uid="uid://bpnaeev8my7bw" path="res://assets/vehicles/White_BOXTRUCK_CLEAN_All_000-sheet.png" id="2_edm8k"]
-[ext_resource type="Script" uid="uid://4k4jjud02xdo" path="res://scripts/car_area.gd" id="3_vcknj"]
+[ext_resource type="Script" uid="uid://4k4jjud02xdo" path="res://scripts/car/car_area.gd" id="3_vcknj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dhq0x"]
 size = Vector2(80, 28)
@@ -10,7 +10,7 @@ size = Vector2(80, 28)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0uqxc"]
 size = Vector2(93, 30)
 
-[node name="Truck" type="CharacterBody2D" unique_id=422600191]
+[node name="Truck" type="CharacterBody2D" unique_id=422600191 groups=["Car", "enterable_car"]]
 script = ExtResource("1_edm8k")
 speed = 100
 rotation_speed = 1.0

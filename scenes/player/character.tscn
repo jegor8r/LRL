@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bjxmqg4xnvus3"]
 
 [ext_resource type="Texture2D" uid="uid://bllshab86vr5u" path="res://assets/characters/Default/idle320x320.png" id="1_ntlox"]
-[ext_resource type="Script" uid="uid://csvrp210ifvrs" path="res://scripts/character.gd" id="1_unmdi"]
+[ext_resource type="Script" uid="uid://csvrp210ifvrs" path="res://scripts/character/character.gd" id="1_unmdi"]
 [ext_resource type="Texture2D" uid="uid://b3csnryvxafr8" path="res://assets/characters/Default/walk320x320.png" id="2_unmdi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p42bw"]

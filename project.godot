@@ -23,6 +23,7 @@ Character="Персонаж"
 Police="Группа для полиции"
 Player="Player group"
 Item="Item group"
+enterable_car="Car which we can enter"
 
 [physics]
 

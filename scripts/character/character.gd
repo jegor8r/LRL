@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var speed = 100
 @export var stamina = 100
 @export var max_stamina = 100
-
+var current_car = null
 # получаем узел AnimatedSprite2D
 @onready var sprite = $AnimatedSprite2D
 #Ходьба
@@ -85,3 +85,18 @@ func blink_heal():   #Функция моргания (Для востановл
 		await  get_tree().create_timer(0.1).timeout
 		sprite.modulate = Color(1, 1, 1)
 		await get_tree().create_timer(0.1).timeout
+func physics_process(delta):
+	if Input.is_action_just_pressed("interact"):
+		if current_car != null:
+			_exit_car()
+		else:
+			_try_enter_car()
+func _try_enter_car():
+	for car in get_tree().get_nodes_in_group("enterable_car"):
+		if car.player_nearby and not car.is_occupied:
+			current_car = car
+			car.enter_car(self)
+			return
+func _exit_car():
+	current_car.exit_car(self)
+	current_car = null
