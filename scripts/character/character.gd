@@ -41,7 +41,12 @@ func _physics_process(delta):
 		sprite.play("Walk_left")
 	elif direction.x > 0:
 		sprite.play("Walk_right")
-
+		
+	if Input.is_action_just_pressed("interact"):
+		if current_car != null:
+			_exit_car()
+		else:
+			_try_enter_car()
 # Функции здоровья и урона
 func take_damage(amount):
 	health -=amount
@@ -85,12 +90,6 @@ func blink_heal():   #Функция моргания (Для востановл
 		await  get_tree().create_timer(0.1).timeout
 		sprite.modulate = Color(1, 1, 1)
 		await get_tree().create_timer(0.1).timeout
-func physics_process(delta):
-	if Input.is_action_just_pressed("interact"):
-		if current_car != null:
-			_exit_car()
-		else:
-			_try_enter_car()
 func _try_enter_car():
 	for car in get_tree().get_nodes_in_group("enterable_car"):
 		if car.player_nearby and not car.is_occupied:

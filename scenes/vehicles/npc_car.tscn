@@ -7,9 +7,9 @@
 size = Vector2(51, 22)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pj364"]
-size = Vector2(58, 37)
+size = Vector2(63, 40)
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=968845134]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=968845134 groups=["Car", "enterable_car"]]
 script = ExtResource("1_khed4")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1214114273]
@@ -21,8 +21,8 @@ vframes = 7
 position = Vector2(-1.5, 5)
 shape = SubResource("RectangleShape2D_dmjwx")
 
-[node name="EntryZone(Area 2D)" type="Area2D" parent="." unique_id=675541932]
+[node name="EntryZone" type="Area2D" parent="." unique_id=675541932]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EntryZone(Area 2D)" unique_id=1339306466]
-position = Vector2(-2, 2.5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EntryZone" unique_id=1339306466]
+position = Vector2(-3.5, 3)
 shape = SubResource("RectangleShape2D_pj364")
