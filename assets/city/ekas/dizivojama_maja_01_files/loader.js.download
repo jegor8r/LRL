@@ -1,0 +1,1 @@
+!function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://"+inxBX.config.emiter+"/bxlib/js/emiter.js?2871",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}();
